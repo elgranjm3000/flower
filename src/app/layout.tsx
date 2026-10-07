@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description:
       "Te vestimos a tu medida. Moda dama y caballero pensada para que te veas bien en cada ocasión.",
     images: [
-      { url: "/brand-logo.jpg", width: 1165, height: 665, alt: "Sunflower by Company — Men & Women's Apparel" },
+      { url: "/og-image.jpg", width: 1200, height: 630, alt: "Sunflower by Company — Men & Women's Apparel" },
     ],
   },
   twitter: {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Sunflower by Company | Ropa de Dama y Caballero",
     description:
       "Sunflower by Company te vestimos a tu medida — nos encanta hacer que te veas bien. Moda dama y caballero.",
-    images: ["/brand-logo.jpg"],
+    images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true },
 };
