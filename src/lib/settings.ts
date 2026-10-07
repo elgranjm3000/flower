@@ -4,7 +4,7 @@ import { settings } from "@/db/schema";
 
 export const DEFAULTS = {
   bcv_rate: "4200", // Bs por 1 USD
-  whatsapp: "584120000000",
+  whatsapp: "584142584448",
   store_name: "Sunflower by Company",
   payment_pagomovil_phone: "0412-0000000",
   payment_pagomovil_bank: "Banco de Venezuela",
