@@ -11,14 +11,17 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: {
-    default: "Sunflower by Company — Moda y calzado en Venezuela",
+    default: "Sunflower by Company | Ropa de Dama y Caballero en Venezuela",
     template: "%s | Sunflower by Company",
   },
   description:
-    "Tienda de moda, calzado y accesorios con precios en dólares y bolívares a la tasa oficial BCV. Paga con Pago Móvil o Zelle. Envíos MRW, Tealca y Zoom a toda Venezuela.",
+    "Venta de ropa para dama y caballero: camisas, vestidos, jeans, calzado y accesorios. Precios en USD y Bs. a tasa oficial BCV · Pago Móvil y Zelle verificados · Envíos MRW, Tealca y Zoom a toda Venezuela.",
   keywords: [
-    "tienda de ropa Venezuela",
-    "moda online Venezuela",
+    "ropa de dama",
+    "ropa de caballero",
+    "venta de ropa Venezuela",
+    "tienda de ropa online Venezuela",
+    "moda dama y caballero",
     "precios en dólares y bolívares",
     "pago móvil",
     "zelle",
@@ -29,16 +32,19 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_VE",
     siteName: "Sunflower by Company",
-    title: "Sunflower by Company — Moda y calzado en Venezuela",
+    title: "Sunflower by Company | Ropa de Dama y Caballero",
     description:
-      "Precios en USD y Bs. a tasa BCV. Pago Móvil y Zelle verificados. Envíos a toda Venezuela.",
-    images: [{ url: "/api/images/og-default", width: 1200, height: 630 }],
+      "Venta de ropa para dama y caballero con estilo. Precios en USD y Bs. a tasa BCV · Pago Móvil y Zelle verificados · Envíos a toda Venezuela.",
+    images: [
+      { url: "/brand-logo.jpg", width: 1165, height: 665, alt: "Sunflower by Company — Men & Women's Apparel" },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sunflower by Company — Moda y calzado en Venezuela",
+    title: "Sunflower by Company | Ropa de Dama y Caballero",
     description:
-      "Precios en USD y Bs. a tasa BCV. Pago Móvil y Zelle verificados.",
+      "Venta de ropa dama y caballero · USD y Bs. a tasa BCV · Pago Móvil y Zelle verificados.",
+    images: ["/brand-logo.jpg"],
   },
   robots: { index: true, follow: true },
 };

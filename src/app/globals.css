@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  /* Sunflower Retail Experience */
-  --color-navy: #0d1b2a;
-  --color-navy-light: #1a2744;
+  /* Sunflower Retail Experience — tema dark elegante */
+  --color-navy: #0a0a0a;
+  --color-navy-light: #1c1c1c;
   --color-gold: #d49e35;
   --color-gold-dark: #c59b27;
   --color-whatsapp: #25d366;

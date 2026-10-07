@@ -18,46 +18,48 @@ export default async function HomePage() {
     <>
       {/* Hero */}
       <section className="bg-navy text-white">
-        <div className="container-sf grid grid-cols-1 items-center gap-8 py-12 lg:grid-cols-2 lg:py-20">
+        <div className="container-sf grid grid-cols-1 items-center gap-10 py-12 lg:grid-cols-2 lg:py-16">
           <div>
             <span className="badge-sf border border-gold/40 bg-gold/10 text-gold">
-              Nueva Colección Exclusiva · Tasa Oficial BCV
+              Men &amp; Women&apos;s Apparel · Envíos a toda Venezuela
             </span>
             <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-              Viste con estilo y autenticidad en cada ocasión
+              Ropa de <span className="text-gold">dama y caballero</span> con
+              estilo y autenticidad
             </h1>
             <p className="mt-4 max-w-lg text-base leading-7 text-white/70">
-              Precios claros en dólares y bolívares a la tasa oficial BCV.
-              Paga con Pago Móvil, Zelle o en efectivo. Envíos a toda
-              Venezuela con MRW, Tealca y Zoom.
+              Camisas, vestidos, jeans, calzado y accesorios seleccionados
+              para cada ocasión. Precios en dólares y bolívares a la tasa
+              oficial BCV, con despacho nacional asegurado.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/productos?department=damas" className="btn-gold">
-                Ver Colección Damas
+                Colección Damas
               </Link>
               <Link href="/productos?department=caballeros" className="btn-outline border-white text-white hover:bg-white/10">
                 Colección Caballeros
               </Link>
             </div>
-            <div className="mt-8 flex flex-wrap gap-6 text-xs text-white/60">
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/60">
               <span>✓ Pago Móvil y Zelle verificados</span>
-              <span>🚚 Envíos nacionales</span>
+              <span>🚚 MRW · Tealca · Zoom · Domesa</span>
               <span>💬 Soporte WhatsApp 24/7</span>
             </div>
           </div>
-          <div className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur lg:ml-auto lg:max-w-sm">
-            <p className="text-xs font-bold uppercase tracking-wider text-gold">
-              Beneficio exclusivo · Hoy
-            </p>
-            <p className="mt-2 text-2xl font-extrabold">Envío Nacional Gratis</p>
-            <p className="mt-1 text-sm text-white/70">En compras desde $50 USD</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {["MRW", "TEALCA", "ZOOM", "DOMESA"].map((c) => (
-                <span key={c} className="badge-sf border border-white/20 text-white/80">
-                  {c}
-                </span>
-              ))}
+
+          {/* Logo de marca */}
+          <div className="lg:justify-self-end">
+            <div className="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-float lg:mx-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand-logo.jpg"
+                alt="Sunflower by Company — Men & Women's Apparel"
+                className="h-auto w-full"
+              />
             </div>
+            <p className="mt-4 text-center text-xs font-bold uppercase tracking-[0.2em] text-gold lg:text-right">
+              Envío nacional gratis desde $50
+            </p>
           </div>
         </div>
       </section>

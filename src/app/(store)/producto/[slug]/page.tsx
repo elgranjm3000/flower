@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     `${product.name} — ${formatUsd(product.priceUsd)} con envíos a toda Venezuela. Precios en USD y Bs. a tasa BCV.`;
   const ogImage = product.imageId
     ? { url: `/api/images/${product.imageId}`, width: 800, height: 1000, alt: product.name }
-    : { url: "/api/images/og-default", width: 1200, height: 630 };
+    : { url: "/brand-logo.jpg", width: 1165, height: 665, alt: product.name };
 
   return {
     title: product.name,
