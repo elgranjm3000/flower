@@ -18,13 +18,11 @@ export default async function HomePage() {
     <>
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-navy text-white">
-        {/* Imagen de fondo a pantalla completa */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/brand-logo.jpg"
-          alt=""
+        {/* Imagen de fondo con efecto parallax (fija al hacer scroll en escritorio) */}
+        <div
           aria-hidden="true"
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
+          className="absolute inset-0 -z-10 bg-cover bg-center md:bg-fixed"
+          style={{ backgroundImage: "url('/brand-logo.jpg')" }}
         />
         {/* Velo oscuro para legibilidad */}
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/90 via-black/75 to-black/55" />
