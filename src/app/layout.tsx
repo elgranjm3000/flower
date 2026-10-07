@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | Sunflower by Company",
   },
   description:
-    "Venta de ropa para dama y caballero: camisas, vestidos, jeans, calzado y accesorios. Precios en USD y Bs. a tasa oficial BCV · Pago Móvil y Zelle verificados · Envíos MRW, Tealca y Zoom a toda Venezuela.",
+    "En Sunflower by Company te vestimos a tu medida: moda dama y caballero seleccionada para que te veas y te sientas increíble. Precios en USD y Bs. a tasa BCV · Pago Móvil y Zelle verificados · Envíos a toda Venezuela.",
   keywords: [
     "ropa de dama",
     "ropa de caballero",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Sunflower by Company",
     title: "Sunflower by Company | Ropa de Dama y Caballero",
     description:
-      "Venta de ropa para dama y caballero con estilo. Precios en USD y Bs. a tasa BCV · Pago Móvil y Zelle verificados · Envíos a toda Venezuela.",
+      "Te vestimos a tu medida. Moda dama y caballero pensada para que te veas bien en cada ocasión · USD y Bs. a tasa BCV · Pago Móvil y Zelle verificados.",
     images: [
       { url: "/brand-logo.jpg", width: 1165, height: 665, alt: "Sunflower by Company — Men & Women's Apparel" },
     ],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sunflower by Company | Ropa de Dama y Caballero",
     description:
-      "Venta de ropa dama y caballero · USD y Bs. a tasa BCV · Pago Móvil y Zelle verificados.",
+      "Sunflower by Company te vestimos a tu medida — nos encanta hacer que te veas bien. Moda dama y caballero · USD y Bs. a tasa BCV · Pago Móvil y Zelle.",
     images: ["/brand-logo.jpg"],
   },
   robots: { index: true, follow: true },
