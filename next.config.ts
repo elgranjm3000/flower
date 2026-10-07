@@ -8,7 +8,6 @@ const nextConfig: NextConfig = {
     serverActions: { bodySizeLimit: "30mb" },
   },
   turbopack: {
-    root: "/home/muentes/devs/eccomerce",
     rules: {
       "*.css": {
         loaders: ["@tailwindcss/turbopack"],
