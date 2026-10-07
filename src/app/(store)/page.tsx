@@ -47,7 +47,7 @@ export default async function HomePage() {
               <Link href="/productos?department=damas" className="btn-gold">
                 Colección Damas
               </Link>
-              <Link href="/productos?department=caballeros" className="btn-outline border-white text-white hover:bg-white/10">
+              <Link href="/productos?department=caballeros" className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-white px-6 font-bold text-navy transition-colors hover:bg-white/85">
                 Colección Caballeros
               </Link>
             </div>
