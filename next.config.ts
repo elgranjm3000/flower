@@ -1,10 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  // Sitio 100% dinámico (catálogo y pedidos en vivo desde Turso).
+  cacheComponents: false,
+  // Subida de galería de imágenes vía Server Action (BLOB en Turso)
+  experimental: {
+    serverActions: { bodySizeLimit: "30mb" },
+  },
   turbopack: {
+    root: "/home/muentes/devs/eccomerce",
     rules: {
       "*.css": {
         loaders: ["@tailwindcss/turbopack"],
