@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sunflower by Company | Ropa de Dama y Caballero",
     description:
-      "Sunflower by Company te vestimos a tu medida — nos encanta hacer que te veas bien. Moda dama y caballero · USD y Bs. a tasa BCV · Pago Móvil y Zelle.",
+      "Sunflower by Company te vestimos a tu medida — nos encanta hacer que te veas bien. Moda dama y caballero.",
     images: ["/brand-logo.jpg"],
   },
   robots: { index: true, follow: true },
