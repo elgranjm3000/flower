@@ -17,17 +17,28 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-navy text-white">
-        <div className="container-sf grid grid-cols-1 items-center gap-10 py-12 lg:grid-cols-2 lg:py-16">
-          <div>
-            <span className="badge-sf border border-gold/40 bg-gold/10 text-gold">
+      <section className="relative isolate overflow-hidden bg-navy text-white">
+        {/* Imagen de fondo a pantalla completa */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/brand-logo.jpg"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 h-full w-full object-cover"
+        />
+        {/* Velo oscuro para legibilidad */}
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/90 via-black/75 to-black/55" />
+
+        <div className="container-sf flex min-h-[520px] flex-col justify-center py-16 lg:min-h-[600px]">
+          <div className="max-w-2xl">
+            <span className="badge-sf border border-gold/40 bg-gold/10 text-gold backdrop-blur-sm">
               Men &amp; Women&apos;s Apparel · Envíos a toda Venezuela
             </span>
-            <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
+            <h1 className="mt-4 text-4xl font-extrabold leading-tight tracking-tight text-balance sm:text-5xl lg:text-6xl">
               Ropa de <span className="text-gold">dama y caballero</span> con
               estilo y autenticidad
             </h1>
-            <p className="mt-4 max-w-lg text-base leading-7 text-white/70">
+            <p className="mt-4 max-w-xl text-base leading-7 text-white/80 sm:text-lg">
               Camisas, vestidos, jeans, calzado y accesorios seleccionados
               para cada ocasión. Precios en dólares y bolívares a la tasa
               oficial BCV, con despacho nacional asegurado.
@@ -40,26 +51,11 @@ export default async function HomePage() {
                 Colección Caballeros
               </Link>
             </div>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/60">
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/70">
               <span>✓ Pago Móvil y Zelle verificados</span>
               <span>🚚 MRW · Tealca · Zoom · Domesa</span>
               <span>💬 Soporte WhatsApp 24/7</span>
             </div>
-          </div>
-
-          {/* Logo de marca */}
-          <div className="lg:justify-self-end">
-            <div className="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-float lg:mx-0">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/brand-logo.jpg"
-                alt="Sunflower by Company — Men & Women's Apparel"
-                className="h-auto w-full"
-              />
-            </div>
-            <p className="mt-4 text-center text-xs font-bold uppercase tracking-[0.2em] text-gold lg:text-right">
-              Envío nacional gratis desde $50
-            </p>
           </div>
         </div>
       </section>
